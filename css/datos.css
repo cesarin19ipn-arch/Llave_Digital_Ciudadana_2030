@@ -1,0 +1,81 @@
+tramites {
+  display: block;
+  font:
+    16px system-ui,
+    sans-serif;
+  background: #f4f7fb;
+  color: #182842;
+  padding: 32px;
+  max-width: 1100px;
+  margin: auto;
+}
+tramites:before {
+  content: "Llave Digital Ciudadana 2030 · Catálogo XML";
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+tramite {
+  display: block;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 15px 0;
+  border-left: 8px solid #2b66a1;
+  box-shadow: 0 5px 20px #172d4212;
+}
+tramite[categoria="no"] {
+  border-color: #ccc;
+}
+tramite[id="R001"] {
+  border-color: #16a384;
+}
+tramite[id="R002"] {
+  border-color: #da9850;
+}
+tramite[id="R003"] {
+  border-color: #547ad7;
+}
+nombre {
+  display: block;
+  font-size: 1.35em;
+  font-weight: 700;
+}
+descripcion,
+modalidad,
+organismo,
+url,
+categoria,
+requisitos,
+requisito {
+  display: block;
+  margin-top: 9px;
+}
+categoria {
+  font-weight: 700;
+}
+modalidad:before {
+  content: "Modalidad: ";
+  font-weight: 700;
+}
+organismo:before {
+  content: "Autoridad: ";
+  font-weight: 700;
+}
+requisitos:before {
+  content: "Requisitos básicos:";
+  display: block;
+  font-weight: 700;
+}
+requisito:before {
+  content: "• ";
+}
+url {
+  color: #075fbd;
+  overflow-wrap: anywhere;
+}
+url:before {
+  content: "Enlace oficial: ";
+  font-weight: 700;
+}

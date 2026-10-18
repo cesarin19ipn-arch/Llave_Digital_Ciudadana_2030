@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Prototipo académico de orientación sobre trámites y servicios digitales en México."
+    />
+    <title>Llave Digital Ciudadana 2030 | Orientación</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a href="#contenido" class="saltar">Saltar al contenido</a>
+    <header class="header">
+      <div class="ancho cabecera">
+        <a class="marca" href="#inicio"
+          ><span class="emblema" aria-hidden="true">✦</span
+          ><span
+            >Llave Digital <strong>Ciudadana 2030</strong
+            ><small>Orientación ciudadana · Proyecto académico</small></span
+          ></a
+        >
+        <nav aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a><a href="#tramites">Trámites</a
+          ><a href="#preguntas">Preguntas</a><a href="#seguridad">Seguridad</a
+          ><a href="#arquitectura">Funcionamiento</a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section id="inicio" class="hero">
+        <div class="ancho hero-inner">
+          <span class="etiqueta"
+            >ORIENTACIÓN CIUDADANA · PROYECTO ACADÉMICO</span
+          >
+          <h1>Tus trámites digitales, más claros y sencillos.</h1>
+          <p>
+            Conoce requisitos básicos, modalidades de atención y canales
+            oficiales para consultar la CURP, solicitar un pasaporte y obtener
+            una copia certificada del acta de nacimiento.
+          </p>
+          <a class="boton" href="#tramites"
+            >Explorar trámites <span aria-hidden="true">→</span></a
+          >
+          <p class="aclaracion">
+            <strong>Importante:</strong> Sitio académico no gubernamental. No
+            realiza trámites, no autentica identidades ni recopila datos
+            personales.
+          </p>
+        </div>
+      </section>
+      <section id="tramites" class="seccion ancho">
+        <div class="intro">
+          <span class="sobre">01 / CATÁLOGO</span>
+          <h2>Trámites y servicios digitales</h2>
+          <p>
+            Información orientativa basada en fichas oficiales. Verifica los
+            requisitos vigentes antes de iniciar cualquier gestión.
+          </p>
+        </div>
+        <div class="filtros">
+          <div>
+            <label for="buscar">Buscar trámite</label
+            ><input
+              type="search"
+              id="buscar"
+              placeholder="Ej. CURP, acta o pasaporte"
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            <label for="modalidad">Modalidad</label
+            ><select id="modalidad">
+              <option value="todos">Todas</option>
+              <option value="en línea">En línea</option>
+              <option value="presencial">Presencial</option>
+              <option value="mixta">Mixta</option>
+            </select>
+          </div>
+          <button type="button" id="limpiar" class="boton secundario">
+            Limpiar filtros
+          </button>
+        </div>
+        <p id="contador" role="status" aria-live="polite">
+          3 trámites disponibles
+        </p>
+        <div id="tarjetas" class="grid">
+          <article
+            class="tramite tarjeta"
+            data-nombre="consulta e impresión de la curp"
+            data-modalidad="en línea"
+          >
+            <div class="tarjeta-cabecera">
+              <span class="clave">R001</span
+              ><span class="modalidad">En línea</span>
+            </div>
+            <h3>Consulta e impresión de la CURP</h3>
+            <p>
+              Consulta, descarga e imprime tu Clave Única de Registro de
+              Población desde el portal del Gobierno de México.
+            </p>
+            <h4>Requisitos básicos</h4>
+            <ul>
+              <li>
+                CURP, si ya la conoces, o nombre completo y datos de nacimiento.
+              </li>
+              <li>Acceso a internet para consultar el portal oficial.</li>
+            </ul>
+            <p><strong>Modalidad de atención:</strong> En línea</p>
+            <p class="autoridad">Secretaría de Gobernación / RENAPO</p>
+            <a
+              class="enlace"
+              href="https://www.gob.mx/curp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Consultar portal oficial ↗</a
+            >
+          </article>
+          <article
+            class="tramite tarjeta"
+            data-nombre="pasaporte ordinario para mayores de edad"
+            data-modalidad="presencial"
+          >
+            <div class="tarjeta-cabecera">
+              <span class="clave">R002</span
+              ><span class="modalidad">Presencial</span>
+            </div>
+            <h3>Pasaporte ordinario para mayores de edad</h3>
+            <p>
+              Consulta los requisitos para obtener tu pasaporte mexicano y
+              programa una cita ante la Secretaría de Relaciones Exteriores.
+            </p>
+            <h4>Requisitos básicos</h4>
+            <ul>
+              <li>
+                Acreditar nacionalidad mexicana e identidad con documentos
+                aceptados por la SRE.
+              </li>
+              <li>
+                CURP y comprobante de pago de derechos, conforme al supuesto
+                aplicable.
+              </li>
+              <li>
+                Agendar una cita y presentarse en la oficina correspondiente.
+              </li>
+            </ul>
+            <p>
+              <strong>Modalidad de atención:</strong> Presencial con cita;
+              orientación y cita por internet
+            </p>
+            <p class="autoridad">Secretaría de Relaciones Exteriores</p>
+            <a
+              class="enlace"
+              href="https://www.gob.mx/tramites/ficha/pasaporte-ordinario-para-personas-mayores-de-edad/SRE112"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Consultar portal oficial ↗</a
+            >
+          </article>
+          <article
+            class="tramite tarjeta"
+            data-nombre="copia certificada del acta de nacimiento"
+            data-modalidad="mixta"
+          >
+            <div class="tarjeta-cabecera">
+              <span class="clave">R003</span
+              ><span class="modalidad">Mixta</span>
+            </div>
+            <h3>Copia certificada del acta de nacimiento</h3>
+            <p>
+              Consulta y obtén una copia certificada de tu acta de nacimiento
+              mediante los canales oficiales disponibles.
+            </p>
+            <h4>Requisitos básicos</h4>
+            <ul>
+              <li>
+                CURP o datos personales y registrales para localizar el acta.
+              </li>
+              <li>
+                Verificar los datos del registro y realizar el pago cuando
+                corresponda.
+              </li>
+            </ul>
+            <p>
+              <strong>Modalidad de atención:</strong> En línea o presencial,
+              según disponibilidad del registro
+            </p>
+            <p class="autoridad">Secretaría de Gobernación / Registro Civil</p>
+            <a
+              class="enlace"
+              href="https://www.gob.mx/ActaNacimiento/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Consultar portal oficial ↗</a
+            >
+          </article>
+        </div>
+        <p id="sinResultados" class="oculto" role="status">
+          No se encontraron trámites. Modifica los filtros.
+        </p>
+        <p class="xml-link">
+          También puedes consultar la
+          <a href="datos.xml" target="_blank" rel="noopener noreferrer"
+            >versión XML con presentación CSS</a
+          >
+          y <a href="xml.html">cargar el archivo XML en el visualizador</a>.
+        </p>
+      </section>
+      <section id="preguntas" class="seccion suave">
+        <div class="ancho">
+          <span class="sobre">02 / AYUDA</span>
+          <h2>Preguntas frecuentes</h2>
+          <div class="acordeon">
+            <details>
+              <summary>¿Qué es Llave MX?</summary>
+              <p>
+                Es un mecanismo de autenticación para acceder a servicios
+                digitales del Gobierno de México. Este portal no solicita
+                contraseñas ni crea cuentas.
+              </p>
+            </details>
+            <details>
+              <summary>¿Necesito Llave MX para todos los trámites?</summary>
+              <p>
+                No necesariamente. Cada servicio establece sus requisitos y
+                mecanismos de acceso. Revisa la información en su sitio oficial.
+              </p>
+            </details>
+            <details>
+              <summary>¿El portal genera actas, CURP o pasaportes?</summary>
+              <p>
+                No. Es un prototipo educativo que ofrece orientación y enlaces a
+                las autoridades responsables.
+              </p>
+            </details>
+            <details>
+              <summary>¿Dónde reviso costos y tiempos?</summary>
+              <p>
+                En el enlace oficial de cada trámite: pueden cambiar y dependen
+                de la autoridad o entidad correspondiente.
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Qué hago si un sitio me pide mi contraseña por mensaje?
+              </summary>
+              <p>
+                No compartas credenciales por enlaces recibidos por mensajes.
+                Accede escribiendo la dirección oficial en tu navegador.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section id="seguridad" class="seccion ancho">
+        <span class="sobre">03 / PREVENCIÓN</span>
+        <h2>Recomendaciones de seguridad</h2>
+        <div class="dos">
+          <article class="consejo">
+            <h3>Verifica el sitio oficial</h3>
+            <p>
+              Escribe directamente la dirección gubernamental en el navegador y
+              comprueba que corresponda a la autoridad responsable. Desconfía de
+              sitios que imitan trámites.
+            </p>
+          </article>
+          <article class="consejo">
+            <h3>Protege tus credenciales</h3>
+            <p>
+              No compartas contraseñas, códigos de verificación ni documentos
+              con intermediarios desconocidos. Evita acceder desde enlaces
+              sospechosos.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="arquitectura" class="seccion suave">
+        <div class="ancho">
+          <span class="sobre">04 / ARQUITECTURA</span>
+          <h2>Cómo funciona el prototipo</h2>
+          <div class="flujo">
+            <div>Persona usuaria <small>Consulta información</small></div>
+            <span>→</span>
+            <div>Navegador <small>HTML, CSS y JS · implementado</small></div>
+            <span>↔</span>
+            <div>HTTP/HTTPS <small>Al publicar en un servidor</small></div>
+            <span>↔</span>
+            <div>
+              Servidor / aplicación <small>Implementación posterior</small>
+            </div>
+            <span>↔</span>
+            <div>Base de datos <small>Implementación posterior</small></div>
+          </div>
+          <p>
+            En esta versión, las fichas se consultan directamente en el
+            navegador. Se incluye el catálogo en XML; no existe servidor de
+            aplicaciones ni SGBD conectado. Publicar los archivos en alojamiento
+            web habilitaría la entrega mediante HTTP/HTTPS.
+          </p>
+        </div>
+      </section>
+      <section class="seccion ancho">
+        <span class="sobre">05 / FUENTES Y ALCANCE</span>
+        <h2>Información responsable</h2>
+        <p>
+          Prototipo educativo elaborado a partir de los productos de los módulos
+          1–4 de Aplicaciones Web. La gestión de contenidos del módulo 3 se
+          documentó previamente en
+          <a
+            href="https://llaveciudadanamx.wordpress.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Llave Ciudadana MX (WordPress)</a
+          >.
+        </p>
+        <p>
+          Fuentes de trámites:
+          <a
+            href="https://www.gob.mx/curp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >RENAPO</a
+          >,
+          <a
+            href="https://www.gob.mx/tramites/ficha/pasaporte-ordinario-para-personas-mayores-de-edad/SRE112"
+            target="_blank"
+            rel="noopener noreferrer"
+            >SRE</a
+          >
+          y
+          <a
+            href="https://www.gob.mx/ActaNacimiento/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Registro Civil / Gobierno de México</a
+          >.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="ancho">
+        Llave Digital Ciudadana 2030 · Prototipo académico independiente · 2026
+      </div>
+    </footer>
+  </body>
+</html>

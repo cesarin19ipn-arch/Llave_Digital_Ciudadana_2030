@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/datos.css"?>
+<tramites>
+  <tramite id="R001">
+    <nombre>Consulta e impresión de la CURP</nombre>
+    <descripcion>Consulta, descarga e imprime tu Clave Única de Registro de Población desde el portal del Gobierno de México.</descripcion>
+    <categoria>En línea</categoria>
+    <modalidad>En línea</modalidad>
+    <organismo>Secretaría de Gobernación / RENAPO</organismo>
+    <url>https://www.gob.mx/curp/</url>
+    <requisitos>
+      <requisito>CURP, si ya la conoces, o nombre completo y datos de nacimiento.</requisito>
+      <requisito>Acceso a internet para consultar el portal oficial.</requisito>
+    </requisitos>
+  </tramite>
+  <tramite id="R002">
+    <nombre>Pasaporte ordinario para mayores de edad</nombre>
+    <descripcion>Consulta los requisitos para obtener tu pasaporte mexicano y programa una cita ante la Secretaría de Relaciones Exteriores.</descripcion>
+    <categoria>Presencial</categoria>
+    <modalidad>Presencial con cita; orientación y cita por internet</modalidad>
+    <organismo>Secretaría de Relaciones Exteriores</organismo>
+    <url>https://www.gob.mx/tramites/ficha/pasaporte-ordinario-para-personas-mayores-de-edad/SRE112</url>
+    <requisitos>
+      <requisito>Acreditar nacionalidad mexicana e identidad con documentos aceptados por la SRE.</requisito>
+      <requisito>CURP y comprobante de pago de derechos, conforme al supuesto aplicable.</requisito>
+      <requisito>Agendar una cita y presentarse en la oficina correspondiente.</requisito>
+    </requisitos>
+  </tramite>
+  <tramite id="R003">
+    <nombre>Copia certificada del acta de nacimiento</nombre>
+    <descripcion>Consulta y obtén una copia certificada de tu acta de nacimiento mediante los canales oficiales disponibles.</descripcion>
+    <categoria>Mixta</categoria>
+    <modalidad>En línea o presencial, según disponibilidad del registro</modalidad>
+    <organismo>Secretaría de Gobernación / Registro Civil</organismo>
+    <url>https://www.gob.mx/ActaNacimiento/</url>
+    <requisitos>
+      <requisito>CURP o datos personales y registrales para localizar el acta.</requisito>
+      <requisito>Verificar los datos del registro y realizar el pago cuando corresponda.</requisito>
+    </requisitos>
+  </tramite>
+</tramites>

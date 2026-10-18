@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Visualizador XML · Llave Digital Ciudadana 2030</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <main class="ancho seccion">
+      <a href="index.html">← Regresar al portal</a>
+      <h1>Visualizador de los tres trámites en XML</h1>
+      <p>
+        Los registros de <strong>datos.xml</strong> se cargan automáticamente
+        cuando visitas esta página desde un servidor local.
+      </p>
+      <label for="archivo"
+        ><strong>O selecciona otro archivo XML local</strong></label
+      >
+      <p><input type="file" id="archivo" accept=".xml,text/xml" /></p>
+      <p id="estado" role="status" aria-live="polite">
+        Cargando datos.xml…
+      </p>
+      <div id="registros" class="grid"></div>
+    </main>
+    <script src="js/xml.js"></script>
+  </body>
+</html>
